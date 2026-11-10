@@ -1,6 +1,6 @@
 # 王嘉循的个人网站
 
-[访问王嘉循的个人主页](https://wang-jiaxun-profile.kneppersiroka.chatgpt.site)
+[访问王嘉循的个人主页](https://wangjiaxun001-ui.github.io/wang-jiaxun-website/)
 
 下载后打开 `dist/index.html` 即可浏览主页，无需安装依赖。页面样式在 `dist/style.css`，照片在 `dist/images/`。
 
