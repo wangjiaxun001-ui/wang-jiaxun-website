@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#191b1a">
-  <meta name="description" content="王嘉循的个人说明书。来自石家庄，学数字媒体技术，喜欢滑板和音乐。">
-  <title>王嘉循 · 个人说明书</title>
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="王嘉循的个人作品集。关于我、人物内容策划练习、采访工具和我的音乐架。">
+  <title>王嘉循 · 内容策划与个人作品集</title>
   <link rel="icon" href="monogram.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,30 +13,45 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a href="#top" class="brand" aria-label="王嘉循，回到页首"><img src="monogram.svg" alt="" width="40" height="36"><span>王嘉循</span></a>
-      <nav aria-label="主导航"><a href="#about">关于我</a><a href="#music">音乐架</a><a href="#contact">联系我 <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="主导航"><a href="#about">关于我</a><a href="#content">作品集</a><a href="#tools">小工具</a><a href="#contact">联系我 <span aria-hidden="true">↗</span></a></nav>
     </div>
   </header>
   <main>
     <section id="about" class="hero">
       <div class="shell hero-grid">
         <div class="intro">
-          <p class="kicker"><span class="stripes"></span> PERSONAL MANUAL</p>
-          <h1><span class="hi">嘿，我是</span>王嘉循<span class="dot">.</span></h1>
-          <p class="signature" aria-hidden="true">Wang Jiaxun</p>
-          <p class="bio">21 岁，来自河北石家庄，学的是数字媒体技术。<br>慢热的 INFP，喜欢玩滑板、听音乐，也喜欢尝试新鲜事物。</p>
-          <div class="actions">
-            <a class="primary" href="#music">逛逛我的音乐架 <span aria-hidden="true">↘</span></a>
-            <a class="source" href="https://my.feishu.cn/wiki/S6hBww4UoiNHPdkaYAGc1rQjnqb?from=from_copylink" target="_blank" rel="noopener noreferrer">飞书原文 ↗</a>
-          </div>
+          <p class="eyebrow">WANG JIAXUN <span>/</span> 个人作品集</p>
+          <h1>嘿，我是<br>王嘉循<span class="inkdot">.</span></h1>
+          <p class="byline">数字媒体技术学生 · IP 内容策划方向</p>
+          <p class="bio">21 岁，来自石家庄。慢热的 INFP，喜欢滑板和音乐。<br>我想做 IP 操盘手，学着从一个人的日常里，找到值得拍下来的那一刻。</p>
+          <div class="actions"><a class="primary" href="#content">看我的内容练习 ↘</a><a class="source" href="#tools">试试采访工具 ↗</a></div>
         </div>
         <figure class="photo">
-          <div class="tape" aria-hidden="true"></div>
+          
           <img src="images/skate.jpg" alt="我在街边练滑板，板头翘起的一瞬间" width="1072" height="604">
           <figcaption><span>街头滑板</span><span lang="en">SKATE DIARY</span></figcaption>
-          <span class="sticker" aria-hidden="true">✳</span>
+          
         </figure>
       </div>
     </section>
+    <section class="folio shell" id="content" aria-labelledby="works-title">
+      <p class="eyebrow">SELECTED WORK</p><h2 id="works-title">内容作品集<span class="inkdot">.</span></h2>
+      <div class="feature">
+        <figure class="case-image"><a href="images/skate.jpg" aria-label="查看街头滑板原图"><img src="images/skate.jpg" alt="滑板翘起，双脚与地面的距离清晰可见"></a><figcaption>选题素材 / 街头滑板 <a href="images/skate.jpg">查看原图 ↗</a></figcaption></figure>
+        <div class="case-copy"><p class="eyebrow">个人策划练习 · 拍摄提案</p><h3>板落地之前</h3>
+        <p>一张滑板照片只能留下跳起来的瞬间。如果把它拍成人物短片，我更想知道，那天为什么愿意一次次回到起点。</p>
+        <details open><summary>选题与人物</summary><p>从练板者的视角，讲一次普通的练习。采访从一个具体的问题开始：“还记得第一次敢把两只脚都放上板的那天吗？”</p></details>
+        <details><summary>拍摄与剪辑设想</summary><p>开场留一声轮子擦地的声音。第一个镜头拍脚找板的位置，第二个拉远看助跑，最后把镜头留给落地后的表情，让人物自己说说刚刚那一下。</p></details>
+        <details><summary>发布后的复盘计划</summary><p>准备两个开头，一版先听轮声，另一版先听人物说话。对照前几秒的留存，再看评论讨论的是动作还是人，据此决定下一次追问什么。</p></details></div>
+      </div>
+    </section>
+    <section class="tools" id="tools" aria-labelledby="tools-title"><div class="shell tool-grid">
+      <div><p class="eyebrow">CREATOR TOOLS</p><h2 id="tools-title">采访准备卡<span class="inkdot">.</span></h2><p>写下采访对象和你想聊的事，生成一张可复制的提问卡。也可以把它带到 AI 工具里，继续打磨追问。</p></div>
+      <form id="brief"><label for="guest">这次采访谁？</label><input id="guest" required maxlength="65" value="一位刚学滑板的朋友">
+      <label for="topic">想聊哪件具体的事？</label><input id="topic" required maxlength="130" value="第一次成功落地的那天">
+      <button class="primary" type="submit">生成提问卡 ↗</button>
+      <div id="result" hidden><label for="output">你的提问卡</label><textarea id="output" rows="7"></textarea><button type="button" id="copy">复制提问卡</button></div><small id="status" role="status"></small></form>
+    </div></section>
     <section id="music" class="music">
       <div class="shell">
         <div class="section-top"><div><p class="kicker dark"><span class="stripes"></span> MY MUSIC SHELF</p><h2>我的音乐架<span class="purple">.</span></h2></div>
@@ -55,7 +70,7 @@
     <section id="contact" class="contact">
       <div class="shell contact-grid">
         <div><p class="kicker"><span class="stripes"></span> CONTACT</p><h2>找我聊聊<span class="dot">.</span></h2>
-          <a class="card" href="wang-jiaxun.vcf" download="王嘉循.vcf">保存联系名片 ↓</a></div>
+          <a class="card" href="wang-jiaxun.vcf" download="王嘉循.vcf">保存联系名片 ↓</a>　<a class="card" href="https://my.feishu.cn/wiki/S6hBww4UoiNHPdkaYAGc1rQjnqb?from=from_copylink" target="_blank" rel="noopener noreferrer">读我的个人说明书 ↗</a></div>
         <div class="channels">
           <a href="tel:15030166796"><small>电话</small><span>15030166796</span><b aria-hidden="true">↗</b></a>
           <a href="mailto:2795812187@qq.com"><small>邮箱</small><span>2795812187@qq.com</span><b aria-hidden="true">↗</b></a>
@@ -64,5 +79,6 @@
     </section>
   </main>
   <footer class="shell"><span>© 2026 王嘉循</span><a href="#top">回到顶部 ↑</a></footer>
+  <script src="brief.js"></script>
 </body>
 </html>
