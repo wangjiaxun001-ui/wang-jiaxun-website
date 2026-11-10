@@ -3,74 +3,121 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f3ec">
-  <meta name="description" content="王嘉循的个人作品集。关于我、人物内容策划练习、采访工具和我的音乐架。">
+  <meta name="theme-color" content="#25241f">
+  <meta name="description" content="王嘉循的个人作品集。个人介绍、人物 IP 内容案例、创作工具与视觉存档。">
   <title>王嘉循 · 内容策划与个人作品集</title>
   <link rel="icon" href="monogram.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=studio-directory">
 </head>
-<body id="top">
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a href="#top" class="brand" aria-label="王嘉循，回到页首"><img src="monogram.svg" alt="" width="40" height="36"><span>王嘉循</span></a>
-      <nav aria-label="主导航"><a href="#about">关于我</a><a href="#content">作品集</a><a href="#tools">小工具</a><a href="#contact">联系我 <span aria-hidden="true">↗</span></a></nav>
+<body id="top" class="portfolio-home">
+  <header class="site-bar">
+    <div class="bar-inner shell">
+      <a class="bar-signature" href="#top" aria-label="王嘉循，返回封面"><img src="monogram.svg" alt="" width="35" height="28"><span>王嘉循</span></a>
+      <nav class="chapter-links" aria-label="主页章节">
+        <a href="#about">关于嘉循</a><a href="#content">作品案例</a><a href="#tools">采访工具</a><a href="#archive">视觉存档</a><a href="#contact">联系</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-haspopup="dialog" aria-controls="directory" aria-expanded="false">作品目录 <span class="menu-lines" aria-hidden="true"></span></button>
     </div>
   </header>
-  <main>
-    <section id="about" class="hero">
-      <div class="shell hero-grid">
-        <div class="intro">
-          <p class="eyebrow">WANG JIAXUN <span>/</span> 个人作品集</p>
-          <h1>嘿，我是<br>王嘉循<span class="inkdot">.</span></h1>
-          <p class="byline">数字媒体技术学生 · IP 内容策划方向</p>
-          <p class="bio">21 岁，来自石家庄。慢热的 INFP，喜欢滑板和音乐。<br>我想做 IP 操盘手，学着从一个人的日常里，找到值得拍下来的那一刻。</p>
-          <div class="actions"><a class="primary" href="#content">看我的内容练习 ↘</a><a class="source" href="#tools">试试采访工具 ↗</a></div>
+  <dialog id="directory" aria-label="作品目录">
+    <div class="directory-inner shell">
+      <div class="directory-head"><span>王嘉循 <i>/</i> 个人作品集</span><button class="menu-close" type="button" autofocus aria-label="关闭作品目录">关闭 ×</button></div>
+      <div class="directory-layout">
+        <div class="directory-feature">
+          <div class="feature-heading"><h2>开机之前</h2><span>人物采访策划练习</span></div>
+          <div class="directory-stills">
+            <a href="planning.html"><img src="media/planning-desk.jpg" alt=""><span>看策划稿 ↗</span></a>
+            <a href="filming.html"><img src="media/interview-set.jpg" alt=""><span>看分镜预演 ↗</span></a>
+            <a href="review.html"><img src="media/edit-review.jpg" alt=""><span>看账号复盘 ↗</span></a>
+          </div>
         </div>
-        <figure class="photo">
-          
-          <img src="images/skate.jpg" alt="我在街边练滑板，板头翘起的一瞬间" width="1072" height="604">
-          <figcaption><span>街头滑板</span><span lang="en">SKATE DIARY</span></figcaption>
-          
-        </figure>
+        <nav aria-label="全屏导航">
+          <a href="#top">开场封面</a><a href="#about">关于嘉循</a><a href="#content">作品案例</a>
+          <a href="#tools">采访工具</a><a href="#archive">视觉存档</a><a href="#contact">找我聊聊</a>
+        </nav>
+      </div>
+    </div>
+  </dialog>
+  <main>
+    <section class="cover" aria-labelledby="cover-name">
+      <img class="cover-image" src="images/studio-chair.jpg" alt="暖色聚光灯下的空导演椅与两盏影棚柔光灯" fetchpriority="high">
+      <div class="cover-copy">
+        <p lang="en">Wang Jiaxun</p>
+        <h1 id="cover-name">王嘉循</h1>
+        <p class="cover-role">数字媒体技术学生 · 人物 IP 内容策划</p>
+        <a href="#about" class="cover-link">进入个人介绍 <span aria-hidden="true">→</span></a>
+      </div>
+      <details class="cover-question">
+        <summary><span class="question-label">采访手记 · 开机之前</span><span class="question-line">哪一个镜头，你剪掉时最舍不得？</span></summary>
+        <div class="question-body"><p>我会请对方把时间线停在那里，再追问：“看了多少遍，你才决定剪这一刀？”</p>
+          <a href="planning.html">看这期采访怎么策划 ↗</a></div>
+      </details>
+    </section>
+    <section class="identity" id="about" aria-labelledby="about-title">
+      <div class="identity-inner shell">
+        <div class="identity-meta">
+          <span><i aria-hidden="true"></i>随时到岗</span>
+          <span>北京时间 <time id="studio-time" aria-live="off">UTC+8</time></span>
+        </div>
+        <figure class="identity-photo"><img src="images/jiaxun-studio-portrait.jpg" width="720" height="720" alt="王嘉循的肖像"></figure>
+        <p class="identity-role">数字媒体技术 · 人物 IP 内容策划</p>
+        <h2 id="about-title" tabindex="-1">王嘉循</h2>
+        <p class="identity-roman" lang="en">WANG JIAXUN</p>
+        <p class="identity-intro">我有点慢热，聊到一个人怎么做事，问题就多起来了。</p>
+        <p class="identity-bio">我来自石家庄，想做 IP 操盘手。我喜欢先听一个人讲一件小事，再从他的选择和犹豫里找选题。在《开机之前》这组练习里，我从摄影师最舍不得删掉的一个镜头问起，把这个问题写成提纲，也试着排了一遍镜头。</p>
+        <div class="identity-actions"><a href="#content">浏览作品 <span aria-hidden="true">↓</span></a><a href="#contact">联系我</a></div>
+        <a class="identity-note" href="planning.html">读《开机之前》的采访提纲 ↗</a>
+      </div>
+      <div class="type-band">
+        <div class="type-rows" aria-hidden="true">
+          <div class="type-lane"><div class="type-track"><div class="type-repeat"><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i></div><div class="type-repeat"><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i><span>人物采访</span><i>✳</i><span lang="en">INTERVIEWS</span><i>✳</i></div></div></div>
+          <div class="type-lane"><div class="type-track"><div class="type-repeat"><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i></div><div class="type-repeat"><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i><span>内容策划</span><i>✳</i><span lang="en">CONTENT PLANNING</span><i>✳</i></div></div></div>
+          <div class="type-lane"><div class="type-track"><div class="type-repeat"><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i></div><div class="type-repeat"><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i><span>拍摄剪辑</span><i>✳</i><span lang="en">FILM & EDIT</span><i>✳</i></div></div></div>
+        </div>
+        <button type="button" class="type-pause" aria-label="暂停滚动字带">暂停 Ⅱ</button>
       </div>
     </section>
     <section class="folio shell" id="content" aria-labelledby="works-title">
-      <p class="eyebrow">SELECTED WORK</p><h2 id="works-title">内容作品集<span class="inkdot">.</span></h2>
-      <div class="feature">
-        <figure class="case-image"><a href="images/skate.jpg" aria-label="查看街头滑板原图"><img src="images/skate.jpg" alt="滑板翘起，双脚与地面的距离清晰可见"></a><figcaption>选题素材 / 街头滑板 <a href="images/skate.jpg">查看原图 ↗</a></figcaption></figure>
-        <div class="case-copy"><p class="eyebrow">个人策划练习 · 拍摄提案</p><h3>板落地之前</h3>
-        <p>一张滑板照片只能留下跳起来的瞬间。如果把它拍成人物短片，我更想知道，那天为什么愿意一次次回到起点。</p>
-        <details open><summary>选题与人物</summary><p>从练板者的视角，讲一次普通的练习。采访从一个具体的问题开始：“还记得第一次敢把两只脚都放上板的那天吗？”</p></details>
-        <details><summary>拍摄与剪辑设想</summary><p>开场留一声轮子擦地的声音。第一个镜头拍脚找板的位置，第二个拉远看助跑，最后把镜头留给落地后的表情，让人物自己说说刚刚那一下。</p></details>
-        <details><summary>发布后的复盘计划</summary><p>准备两个开头，一版先听轮声，另一版先听人物说话。对照前几秒的留存，再看评论讨论的是动作还是人，据此决定下一次追问什么。</p></details></div>
+      <h2 id="works-title">作品案例</h2>
+      <p class="section-intro">《开机之前》是一组人物访谈策划练习。从桌上的第一个问题，到摄影机前的一次停顿，再到剪辑台上的取舍。配图均为选用的摄影参考。</p>
+      <div class="case-cards">
+        <a href="planning.html"><img src="media/planning-desk.jpg" alt="木桌上正在手写的笔记与电脑"><div><small>人物与账号策划</small><h3>开机前，先问什么？</h3><p>从拍摄者最近删掉的一个镜头，找到值得追问的故事。</p><b>看策划稿 ↗</b></div></a>
+        <a href="filming.html"><img src="media/interview-set.jpg" alt="木地板影棚中，工作人员与摄影机环绕受访者"><div><small>拍摄与剪辑</small><h3>从提纲到时间线</h3><p>在 9 秒分镜预演里看访谈准备、开机与回看。</p><b>播放分镜预演 ↗</b></div></a>
+        <a href="review.html"><img src="media/edit-review.jpg" alt="两位工作人员戴着耳机在监视器旁回看画面"><div><small>运营与复盘</small><h3>哪个开头留住了人？</h3><p>对照两种开场，用同一口径读播放和分享。</p><b>看复盘示例 ↗</b></div></a>
       </div>
     </section>
     <section class="tools" id="tools" aria-labelledby="tools-title"><div class="shell tool-grid">
-      <div><p class="eyebrow">CREATOR TOOLS</p><h2 id="tools-title">采访准备卡<span class="inkdot">.</span></h2><p>写下采访对象和你想聊的事，生成一张可复制的提问卡。也可以把它带到 AI 工具里，继续打磨追问。</p></div>
-      <form id="brief"><label for="guest">这次采访谁？</label><input id="guest" required maxlength="65" value="一位刚学滑板的朋友">
-      <label for="topic">想聊哪件具体的事？</label><input id="topic" required maxlength="130" value="第一次成功落地的那天">
+      <div><h2 id="tools-title">创作工具</h2><h3>采访准备卡</h3><p>开拍之前，先把“聊聊你的工作”缩小到一次具体的剪辑决定。输入人物和话题，生成提纲，再把问题改成自己的问法。</p><button type="button" id="example" class="text-link">试用拍摄者采访样例 ↗</button></div>
+      <form id="brief"><label for="guest">这次采访谁？</label><input id="guest" required maxlength="65" placeholder="例如：刚剪完短片的摄影师">
+      <label for="topic">想聊哪件具体的事？</label><input id="topic" required maxlength="130" placeholder="例如：剪掉最喜欢的镜头">
       <button class="primary" type="submit">生成提问卡 ↗</button>
-      <div id="result" hidden><label for="output">你的提问卡</label><textarea id="output" rows="7"></textarea><button type="button" id="copy">复制提问卡</button></div><small id="status" role="status"></small></form>
+      <div id="result" hidden><label for="output">你的提问卡</label><textarea id="output" rows="7"></textarea><div class="tool-actions"><button type="button" id="copy">复制提问卡</button><button type="button" id="ai-prompt">整理成 AI 追问提示词</button></div><div id="prompt-panel" hidden><label for="prompt-text">复制到你使用的 AI 工具中继续追问</label><textarea id="prompt-text" rows="6" readonly></textarea></div></div><small id="status" role="status"></small></form>
     </div></section>
-    <section id="music" class="music">
-      <div class="shell">
-        <div class="section-top"><div><p class="kicker dark"><span class="stripes"></span> MY MUSIC SHELF</p><h2>我的音乐架<span class="purple">.</span></h2></div>
-          <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        </div>
-        <ul class="records" aria-label="说明书里的六张音乐封面">
-          <li><img src="images/record-1.jpg" alt="赫鬼的封面" width="420" height="420"><span>赫鬼</span></li>
-          <li><img src="images/record-2.jpg" alt="周旋的封面" width="420" height="420"><span>周旋</span></li>
-          <li><img src="images/record-3.jpg" alt="在雨后醒来的封面" width="420" height="420"><span>在雨后醒来</span></li>
-          <li><img src="images/record-4.jpg" alt="假面骑士的封面" width="420" height="420"><span>假面骑士</span></li>
-          <li><img src="images/record-5.jpg" alt="夜车的封面" width="420" height="420"><span>夜车</span></li>
-          <li><img src="images/record-6.jpg" alt="We Made Dat! 的封面" width="420" height="420"><span lang="en">We Made Dat!</span></li>
-        </ul>
+    <section id="archive" class="archive" aria-labelledby="archive-title"><div class="shell">
+      <header class="archive-heading">
+        <h2 id="archive-title">视觉存档</h2>
+        <p class="archive-intro">片场摄影参考 / Pexels</p>
+      </header>
+      <div class="archive-gallery">
+        <a href="images/archive-slate.jpg" data-caption="用黑白和留白定下片场的安静感。" data-source="https://www.pexels.com/photo/a-grayscale-of-a-clapperboard-beside-camera-lens-5627838/">
+          <img src="images/archive-slate.jpg" alt="黑白照片中，场记板和几支镜头放在木桌上" loading="lazy">
+          <span>开拍前的场记板 <b>放大 ↗</b></span>
+        </a>
+        <a href="images/archive-lens.jpg" data-caption="侧光擦过金属，把视线收在一圈刻度上。" data-source="https://www.pexels.com/photo/vintage-film-camera-close-up-with-lens-detail-30369199/">
+          <img src="images/archive-lens.jpg" alt="暖光下的金属镜头，刻度环与机身纹理清晰可见" loading="lazy">
+          <span>镜头上的刻度 <b>放大 ↗</b></span>
+        </a>
+        <a href="images/archive-sound.jpg" data-caption="旋钮上的一束暖光，呼应封面里照向椅背的灯。" data-source="https://www.pexels.com/photo/vintage-audio-mixer-and-microphone-setup-35836063/">
+          <img src="images/archive-sound.jpg" alt="桌面的调音台、话筒和一叠印刷品" loading="lazy">
+          <span>采访前的调音台 <b>放大 ↗</b></span>
+        </a>
       </div>
-    </section>
+    </div></section>
+    <dialog id="viewer" aria-label="视觉存档大图"><button type="button" id="close-viewer">关闭 ×</button><figure><img alt=""><figcaption><span id="viewer-note"></span> <a id="viewer-source" target="_blank" rel="noopener noreferrer">摄影原图 · Pexels ↗</a></figcaption></figure><div class="viewer-controls"><button type="button" id="previous">← 上一张</button><span id="position" aria-live="polite"></span><button type="button" id="next">下一张 →</button></div></dialog>
     <section id="contact" class="contact">
       <div class="shell contact-grid">
-        <div><p class="kicker"><span class="stripes"></span> CONTACT</p><h2>找我聊聊<span class="dot">.</span></h2>
-          <a class="card" href="wang-jiaxun.vcf" download="王嘉循.vcf">保存联系名片 ↓</a>　<a class="card" href="https://my.feishu.cn/wiki/S6hBww4UoiNHPdkaYAGc1rQjnqb?from=from_copylink" target="_blank" rel="noopener noreferrer">读我的个人说明书 ↗</a></div>
+        <div><h2>找我聊聊</h2>
+          <p class="contact-invite">如果你正在筹备人物采访、短片拍摄或账号选题，欢迎带着想讲的故事来找我。</p><a class="card" href="wang-jiaxun.vcf" download="王嘉循.vcf">保存联系名片 ↓</a></div>
         <div class="channels">
           <a href="tel:15030166796"><small>电话</small><span>15030166796</span><b aria-hidden="true">↗</b></a>
           <a href="mailto:2795812187@qq.com"><small>邮箱</small><span>2795812187@qq.com</span><b aria-hidden="true">↗</b></a>
@@ -79,6 +126,6 @@
     </section>
   </main>
   <footer class="shell"><span>© 2026 王嘉循</span><a href="#top">回到顶部 ↑</a></footer>
-  <script src="brief.js"></script>
+  <script src="brief.js?v=studio-directory"></script>
 </body>
 </html>
